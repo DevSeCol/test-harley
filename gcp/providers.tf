@@ -1,7 +1,7 @@
 terraform {
   backend "remote" {
     hostname     = "app.terraform.io"
-    organization = "devops-trainicon ng"
+    organization = "devops-training"
 
     workspaces {
       name = "test-harley"
