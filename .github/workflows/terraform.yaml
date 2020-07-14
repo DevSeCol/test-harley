@@ -115,7 +115,7 @@ jobs:
             branches:
             # Push events to branches matching refs/heads/release/10
               - 'destroy/**'
-    # env:
-    #   GOOGLE_APPLICATION_CREDENTIALS: "./TF_SERVICE_ACCOUNT.json"
+      env:
+      GOOGLE_APPLICATION_CREDENTIALS: "./TF_SERVICE_ACCOUNT.json"
 
        
