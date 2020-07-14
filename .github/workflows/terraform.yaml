@@ -108,7 +108,7 @@ jobs:
     #   GOOGLE_APPLICATION_CREDENTIALS: "./TF_SERVICE_ACCOUNT.json"
    
     # Terraform destroy
-    - name: 'Terraform Destroy'
+    - name: Terraform Destroy
       on: 
          push:
             # Secuence of patterns matched against refs/heads
