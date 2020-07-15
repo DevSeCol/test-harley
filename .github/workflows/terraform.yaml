@@ -110,6 +110,6 @@ jobs:
     # Terraform destroy
       Terraform plan -destroy
 
-      GOOGLE_APPLICATION_CREDENTIALS: "./TF_SERVICE_ACCOUNT.json"
+
 
        
