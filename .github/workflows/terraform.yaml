@@ -108,14 +108,8 @@ jobs:
     #   GOOGLE_APPLICATION_CREDENTIALS: "./TF_SERVICE_ACCOUNT.json"
    
     # Terraform destroy
-    - name: Terraform Destroy
-      on: 
-         push:
-            # Secuence of patterns matched against refs/heads
-            branches:
-            # Push events to branches matching refs/heads/release/10
-         run: - 'destroy/**'
-      env1:
+      Terraform plan -destroy
+
       GOOGLE_APPLICATION_CREDENTIALS: "./TF_SERVICE_ACCOUNT.json"
 
        
