@@ -21,11 +21,11 @@ env:
   
   GITHUB_SHA: ${{ github.sha }}
   GKE_ZONE: us-west1-a
-  GKE_CLUSTER: harley-gke-cluster
+  GKE_CLUSTER: harley-gke-cluster 
   IMAGE: harley-gke-test
   REGISTRY_HOSTNAME: gcr.io
   DEPLOYMENT_NAME: harley-gke-test
-
+#prueba
 jobs:
   setup-build-publish-deploy:
     name: Setup, Build, Publish, and Deploy
