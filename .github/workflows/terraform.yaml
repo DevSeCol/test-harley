@@ -76,7 +76,7 @@ jobs:
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
       run: terraform init
-      run: terraform force-unlock -force devops-training/test-harley
+      
 
     # Checks that all Terraform configuration files adhere to a canonical format
     - name: Terraform Format
@@ -85,6 +85,10 @@ jobs:
     # Create the service account file
     - name: Service account activation
       run: echo "${{ secrets.TF_SERVICE_ACCOUNT }}" | base64 -d > TF_SERVICE_ACCOUNT.json
+    
+    # Desbloqueo
+    - name: Desbloqueo
+      run: terraform force-unlock -force devops-training/test-harley
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
