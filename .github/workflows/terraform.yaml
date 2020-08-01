@@ -76,7 +76,7 @@ jobs:
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
       run: terraform init
-      terraform force-unlock devops-training/test-harley
+      terraform force-unlock LOCK_ID devops-training/test-harley
 
     # Checks that all Terraform configuration files adhere to a canonical format
     - name: Terraform Format
